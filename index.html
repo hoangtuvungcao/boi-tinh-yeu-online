@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💞 Bói Tình Yêu 💞</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <audio id="bgMusic" autoplay loop preload="auto">
+    <source src="./assets/audio/mot_dem_say.mp3" type="audio/mpeg">
+  </audio>
+
+  <header>
+    <h1>💖 Bói Tình Yêu Online 💖</h1>
+    <nav>
+      <a href="#" id="homeBtn" class="active" data-target="homePage">Trang chủ</a>
+      <a href="#" id="aboutBtn" data-target="aboutPage">Thành viên</a>
+    </nav>
+  </header>
+
+  <section id="homePage" class="page active">
+    <div class="container">
+      <p>💌 Nhập tên hai người để xem độ hợp nhau nhé 💞</p>
+      <input id="name1" type="text" placeholder="Tên người thứ nhất">
+      <input id="name2" type="text" placeholder="Tên người thứ hai">
+      <button onclick="loveCalculate()">💘 Xem Kết Quả 💘</button>
+      <div class="result" id="result"></div>
+    </div>
+  </section>
+
+  <section id="aboutPage" class="page">
+    <div class="container">
+      <h2>🌸 Thành viên nhóm 🌸</h2>
+      <ul class="member-list">
+        <li>💗 Vi Anh</li>
+        <li>💗 Lisia</li>
+        <li>💗 Kiêu</li>
+        <li>💗 Rôri</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="hearts"></div>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
